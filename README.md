@@ -35,3 +35,9 @@ This will get all the commands that was entered in the shell.
 Cowrie::Commands.all("cowrie-9-11-2020.json")
 ```
 This method will get both the commands and the links and save it in one file
+
+# Time
+ ```Cowrie::Time.date("9-23-2020-cowrie.json")```
+ This will method will create a json file with amount of successful login attemps for that day.
+ ``` ```
+ 
