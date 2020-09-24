@@ -50,3 +50,9 @@ Cowrie::TopTen.top_password("9-20-2020-cowrie.json")
 WIll get the top ten passwords. Output a pie chart of the data as a image with the filename: 09-11-2020-Top Password.png".
 By default it usese the event_id of "cowrie.login.success".
 
+```
+Cowrie::TopTen.daily("9-23-2020-cowrie.json", "password", "cowrie.login.success")
+```
+This method is like Cowrie::TopTen.top_password but this will save all the data each time it is ran into a single json formated file. The key is of the hash
+is the date it was ran, the values of the hash is an array with the password and the amount of times it was used. 
+This method will outptu a json file as 'top_ten_daily_password.json'. The "password" argument in the method can also take "username". 
