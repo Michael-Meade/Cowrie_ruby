@@ -2,4 +2,4 @@
 Most current version
 
 # Installing needed gems
-gem install gruff
+```gem install gruff```
