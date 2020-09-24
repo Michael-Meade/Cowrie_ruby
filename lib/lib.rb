@@ -3,15 +3,15 @@ module Cowrie
 	class Commands
 		def self.all(file)
 			# uses SaveCommands
-			SaveCommands.new(file).get_all
+			SaveCommands.new(File.join("cowrie_logs", file)).get_all
 		end
 		def self.get_links(file)
 			# only get links
-			SaveCommands.new(file).get_links
+			SaveCommands.new(File.join("cowrie_logs", file)).get_links
 		end
 		def self.get_commands(file)
 			# get only commands
-			SaveCommands.new(file).get_commands
+			SaveCommands.new(File.join("cowrie_logs", file)).get_commands
 		end
 
 	end
@@ -37,35 +37,35 @@ module Cowrie
 	class TopTen
 		def self.success_both(file)
 			# runs both both success and failed.
-			Success.new(file).both
+			Success.new(File.join("cowrie_logs", file)).both
 		end
 		def self.success_failed(file)
 			# runs the failed method. 
-			Success.new(file).failed
+			Success.new(File.join("cowrie_logs", file)).failed
 		end
 		def self.success_success(file)
 			# runs the successful method
-			Success.new(file).success
+			Success.new(File.join("cowrie_logs", file)).success
 		end
 		def self.daily(file, j, event_id)
 			# takes input ( j & event_id ) and adds them to a single json file 
 			# with the date
-			SaveFile.new(file, j, event_id).top_ten_daily
+			SaveFile.new(File.join("cowrie_logs", file), j, event_id).top_ten_daily
 		end
 		def self.top_ssh(file)
-			SaveFile.new(file).top_ssh_hash
+			SaveFile.new(File.join("cowrie_logs", file)).top_ssh_hash
 		end
 		def self.top_ssh_hash(file)
-			SaveFile.new(file).top_ssh_hash
+			SaveFile.new(File.join("cowrie_logs", file)).top_ssh_hash
 		end
 		def self.top_password(file)
-			SaveFile.new(file).top_password
+			SaveFile.new(File.join("cowrie_logs", file)).top_password
 		end
 		def self.top_username(file)
-			SaveFile.new(file).top_username
+			SaveFile.new(File.join("cowrie_logs", file)).top_username
 		end
 		def self.date_stats(file)
-			SaveFile.new(file).date_stats
+			SaveFile.new(File.join("cowrie_logs", file)).date_stats
 		end
 	end
 end
