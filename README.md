@@ -5,7 +5,7 @@ Most current version
 ```gem install gruff```
 
 
-# Top Username
+# Top Success
 
 ```
 Cowrie::TopTen.success_both("9-23-2020-cowrie.json")
