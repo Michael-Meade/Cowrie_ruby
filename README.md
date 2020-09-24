@@ -10,3 +10,6 @@ Most current version
 ```
 Cowrie::TopTen.success_both("9-23-2020-cowrie.json")
 ```
+```
+Cowrie::TopTen.success_failed("cowrie-9-12-2020.json")
+```
