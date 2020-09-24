@@ -8,4 +8,4 @@ Most current version
 # Top Username
 
 
-![Thumbnail of Hacker](https://i.imgur.com/CBkAH0b.png=100x100))
+![Thumbnail of Hacker](https://i.imgur.com/P8Ri1cl.png=100x100))
