@@ -55,4 +55,4 @@ Cowrie::TopTen.daily("9-23-2020-cowrie.json", "password", "cowrie.login.success"
 ```
 This method is like Cowrie::TopTen.top_password but this will save all the data each time it is ran into a single json formated file. The key is of the hash
 is the date it was ran, the values of the hash is an array with the password and the amount of times it was used. 
-This method will outptu a json file as 'top_ten_daily_password.json'. The "password" argument in the method can also take "username". 
+This method will outptu a json file as 'top_ten_daily_password.json'. The "password" argument in the method can also take "username".  But unlike "Cowrie::TopTen.top_password" it does not output a pie chart.
