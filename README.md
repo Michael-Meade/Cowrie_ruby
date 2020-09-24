@@ -37,7 +37,16 @@ Cowrie::Commands.all("cowrie-9-11-2020.json")
 This method will get both the commands and the links and save it in one file
 
 # Time
- ```Cowrie::Time.date("9-23-2020-cowrie.json")```
+ ```
+Cowrie::Time.date("9-23-2020-cowrie.json")
+```
  This will method will create a json file with amount of successful login attemps for that day.
  ``` ```
  
+# Top Password
+```
+Cowrie::TopTen.top_password("9-20-2020-cowrie.json")
+```
+WIll get the top ten passwords. Output a pie chart of the data as a image with the filename: 09-11-2020-Top Password.png".
+By default it usese the event_id of "cowrie.login.success".
+
