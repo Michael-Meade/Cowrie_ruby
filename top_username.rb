@@ -7,4 +7,4 @@ require_relative 'lib/cowrie'
 
 =end
 
-Cowrie::TopTen.top_username(File.join("cowrie_logs", "9-20-2020-cowrie.json"))
+Cowrie::TopTen.top_username("9-23-2020-cowrie.json")

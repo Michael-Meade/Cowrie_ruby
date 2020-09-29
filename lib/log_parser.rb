@@ -191,6 +191,19 @@ class DateTimes < LogParser
 		end
 		File.open("time.json", 'w') { |f| f.write(JSON.generate(out)) }
 	end
+	def bar_chart(title)
+		time = Time.new
+		g = Gruff::Bar.new(1000)
+		g.title = title
+		j = JSON.parse(File.read(file))
+		j.each do |data|
+			g.data(data[0], data[1])
+		end
+		g.write("#{time.strftime("%m-%d-%Y")}-#{title.gsub(" ", "-")}.png")
+	end
+	def time_graph(name)
+		bar_chart("TTTT")
+	end
 end
 class SaveFile < LogParser
 	def top_ten_daily
@@ -263,11 +276,11 @@ class SaveFile < LogParser
 	    end
 	    g.write("#{time.strftime("%m-%d-%Y")}-#{type}.png")
 	end
-	def bar_chart(file_read, title)
+	def bar_chart(title)
 		time = Time.new
 		g = Gruff::Bar.new(1000)
 		g.title = title
-		j = JSON.parse(File.read(file_read))
+		j = JSON.parse(File.read(file))
 		j.each do |data|
 			g.data(data[0], data[1])
 		end

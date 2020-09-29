@@ -31,6 +31,9 @@ module Cowrie
 		def self.time(file)
 			DateTimes.new(File.join("cowrie_logs", file)).time_stats
 		end
+		def self.graph(file)
+			DateTimes.new(file).time_graph("ttt")
+		end
 	end
 end
 module Cowrie

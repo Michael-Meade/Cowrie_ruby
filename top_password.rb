@@ -32,7 +32,7 @@ DOES NOT OUTPUT A IMAGE.
 
 =end
 
-Cowrie::TopTen.daily(File.join("cowrie_logs", "9-23-2020-cowrie.json"), "password", "cowrie.login.success")
+Cowrie::TopTen.daily("9-24-2020-cowrie.json", "password", "cowrie.login.success")
 
 
 

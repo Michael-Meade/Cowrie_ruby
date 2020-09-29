@@ -8,8 +8,7 @@ require_relative 'lib/cowrie'
 
 =end
 
-
-Cowrie::TopTen.success_both("cowrie-9-12-2020.json")
+Cowrie::TopTen.success_both("9-23-2020-cowrie.json")
 
 
 =begin
@@ -20,7 +19,7 @@ Cowrie::TopTen.success_both("cowrie-9-12-2020.json")
 =end
 
 
-Cowrie::TopTen.success_failed("cowrie-9-12-2020.json")
+#Cowrie::TopTen.success_failed("cowrie-9-12-2020.json")
 
 
 =begin
@@ -31,4 +30,4 @@ Cowrie::TopTen.success_failed("cowrie-9-12-2020.json")
 =end
 
 
-Cowrie::TopTen.success_success("cowrie-9-12-2020.json")
+#Cowrie::TopTen.success_success("9-23-2020-cowrie.json")
