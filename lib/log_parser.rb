@@ -149,7 +149,12 @@ class DateTimes < LogParser
 	def date_stats
 		parse = File.readlines(file)
 		h = {}
-		count = 0
+		if File.exists?("dates.json")
+			# If dates.json exists. It will change 'h' from empty to the conents of
+			# dates.json
+			read = File.read("dates.json")
+			h    = JSON.parse(read)
+		end
 		parse.each do |line|
 			line = JSON.parse(line)
 			if line["eventid"] == "cowrie.login.success"
@@ -169,10 +174,14 @@ class DateTimes < LogParser
 		File.open("dates.json", 'w') { |f| f.write(JSON.generate(out)) }
 	end
 	def time_stats
-		puts file
 		parse = File.readlines(file)
 		h = {}
-		count = 0
+		if File.exists?("dates.json")
+			# If dates.json exists. It will change 'h' from empty to the conents of
+			# dates.json
+			read = File.read("dates.json")
+			h    = JSON.parse(read)
+		end
 		parse.each do |line|
 			line = JSON.parse(line)
 			if line["eventid"] == "cowrie.login.success"

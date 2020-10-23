@@ -8,7 +8,7 @@ require_relative 'lib/cowrie'
 
 =end
 
-Cowrie::TopTen.success_both("9-23-2020-cowrie.json")
+Cowrie::TopTen.success_both("cowrie.json")
 
 
 =begin

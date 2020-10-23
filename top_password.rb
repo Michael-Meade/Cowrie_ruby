@@ -32,7 +32,7 @@ DOES NOT OUTPUT A IMAGE.
 
 =end
 
-Cowrie::TopTen.daily("9-24-2020-cowrie.json", "password", "cowrie.login.success")
+Cowrie::TopTen.daily("cowrie.json.2020-09-29", "password", "cowrie.login.success")
 
 
 

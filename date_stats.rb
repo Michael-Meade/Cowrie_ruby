@@ -6,5 +6,7 @@ require_relative 'lib/cowrie'
 
 
 
-#Cowrie::Time.date("9-25-2020-cowrie.json")
+Cowrie::Time.date("cowrie.json")
+
+
 Cowrie::Time.graph("dates.json")
